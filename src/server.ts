@@ -23,3 +23,5 @@ app.use(cors(corsOptions));
     }
   }
 })();
+
+export default app;
