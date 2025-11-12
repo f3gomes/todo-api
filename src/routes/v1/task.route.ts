@@ -8,4 +8,4 @@ export const taskRouter = express.Router();
 taskRouter.get("/task/list", taskController.findAll);
 taskRouter.post("/task/new", validateData(taskSchema), taskController.create);
 taskRouter.patch("/task/edit/:id", taskController.update);
-taskRouter.delete("/task/edit/:id", taskController.remove);
+taskRouter.delete("/task/delete/:id", taskController.remove);
